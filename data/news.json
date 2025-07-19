@@ -1,0 +1,42 @@
+{
+  "updates": [
+    {
+      "title": "New Kawaii Collection Added!",
+      "date": "May 15, 2025",
+      "content": "We've added a brand new Kawaii collection with adorable pastel dresses, cute accessories, and charming hairstyles. Dress up your cat girl in the most kawaii style ever!",
+      "image": "./photo/new_girl1.jpg"
+    },
+    {
+      "title": "Gothic Lolita Fashion Update",
+      "date": "May 10, 2025",
+      "content": "Explore the dark and elegant world of Gothic Lolita fashion with new dresses featuring lace details, ribbons, and sophisticated accessories perfect for your cat girl character.",
+      "image": "./photo/new_girl2.jpg"
+    },
+    {
+      "title": "School Uniform Collection",
+      "date": "May 5, 2025",
+      "content": "Get ready for school with our new Japanese school uniform collection! Classic blazers, pleated skirts, and cute accessories to make your cat girl the most stylish student.",
+      "image": "./photo/new_girl3.jpg"
+    }
+  ],
+  "diaries": [
+    {
+      "title": "Fashion Tips: Mixing and Matching",
+      "date": "March 12, 2025",
+      "content": "Learn how to create stunning combinations by mixing different clothing items and accessories. Discover the art of color coordination and style matching for your cat girl.",
+      "image": null
+    },
+    {
+      "title": "Seasonal Style Guide",
+      "date": "March 8, 2025",
+      "content": "Discover the perfect outfits for every season! From light summer dresses to cozy winter wear, we'll help you dress your cat girl appropriately for any weather.",
+      "image": null
+    },
+    {
+      "title": "Accessorizing Like a Pro",
+      "date": "March 3, 2025",
+      "content": "Master the art of accessorizing with our comprehensive guide. Learn how to choose the perfect bows, jewelry, and hair accessories to complete your cat girl's look.",
+      "image": null
+    }
+  ]
+}

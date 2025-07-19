@@ -1,0 +1,463 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 80vh;
+  background: url("../photo/hero_girl.jpg") center/cover no-repeat;
+  padding: var(--spacing-xl) 0;
+  gap: var(--spacing-xl);
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 105, 180, 0.6);
+  z-index: 1;
+  animation: overlayPulse 4s ease-in-out infinite;
+}
+
+@keyframes overlayPulse {
+  0%,
+  100% {
+    background: rgba(255, 105, 180, 0.5);
+  }
+  50% {
+    background: rgba(255, 105, 180, 0.8);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+  text-align: right;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  color: white;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9), 1px 1px 4px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-lg);
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 1px 1px 3px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.hero-image {
+  display: none;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  transition: var(--transition);
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  padding: var(--spacing-xxl) 0;
+  background: var(--background-white);
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  justify-content: center;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background: var(--background-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3),
+    0 2px 8px rgba(255, 105, 180, 0.2);
+  text-align: center;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+  border-color: var(--primary-color);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.feature-card h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* How to Play Section */
+.how-to-play {
+  padding: var(--spacing-xxl) 0;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+.how-to-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.how-to-text {
+  flex: 1;
+}
+
+.how-to-text h2 {
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+  color: white;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.instruction-item {
+  background: var(--background-white);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+  border-left: 4px solid var(--primary-color);
+}
+
+.instruction-item:nth-child(1) {
+  transform: rotate(-3deg);
+}
+
+.instruction-item:nth-child(2) {
+  transform: rotate(2deg);
+}
+
+.instruction-item:nth-child(3) {
+  transform: rotate(-1deg);
+}
+
+.instruction-item:hover {
+  transform: translateX(5px) rotate(0deg);
+  box-shadow: var(--shadow-medium);
+}
+
+.instruction-item h3 {
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+.how-to-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.how-to-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Game Section */
+.game-section {
+  padding: var(--spacing-xxl) 0;
+  background: var(--background-white);
+}
+
+.game-section h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-light);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-light);
+}
+
+.game-container iframe {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Fashion Styles Section */
+.drawing-tools {
+  padding: var(--spacing-xxl) 0;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+.drawing-tools h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  color: white;
+}
+
+.tools-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.tools-text {
+  flex: 1;
+}
+
+.tools-text p {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-md);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tools-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tools-text li {
+  background: var(--background-white);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+  margin-bottom: var(--spacing-lg);
+  border-left: 4px solid var(--accent-color);
+}
+
+.tools-text li:nth-child(1) {
+  transform: rotate(-3deg);
+}
+
+.tools-text li:nth-child(2) {
+  transform: rotate(2deg);
+}
+
+.tools-text li:nth-child(3) {
+  transform: rotate(-1deg);
+}
+
+.tools-text li:nth-child(4) {
+  transform: rotate(1deg);
+}
+
+.tools-text li:hover {
+  transform: translateX(5px) rotate(0deg);
+  box-shadow: var(--shadow-medium);
+}
+
+.tools-text li:last-child {
+  margin-bottom: 0;
+}
+
+.tools-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.tools-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  transition: var(--transition);
+}
+
+.tools-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Reviews Section */
+.reviews {
+  padding: var(--spacing-xxl) 0;
+  background: var(--background-white);
+}
+
+.reviews h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.review-card {
+  background: var(--background-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3),
+    0 2px 8px rgba(255, 105, 180, 0.2);
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.review-card:nth-child(1) {
+  transform: rotate(-2deg);
+}
+
+.review-card:nth-child(2) {
+  transform: rotate(1deg);
+}
+
+.review-card:nth-child(3) {
+  transform: rotate(-1deg);
+}
+
+.review-card:nth-child(4) {
+  transform: rotate(2deg);
+}
+
+.review-card:nth-child(5) {
+  transform: rotate(-1deg);
+}
+
+.review-card:nth-child(6) {
+  transform: rotate(1deg);
+}
+
+.review-card:hover {
+  transform: translateY(-5px) rotate(0deg);
+  box-shadow: var(--shadow-medium);
+  border-color: var(--primary-color);
+}
+
+@keyframes cardFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.review-author {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.review-text {
+  color: var(--text-dark);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .how-to-content {
+    flex-direction: column;
+  }
+
+  .tools-content {
+    flex-direction: column;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card {
+    padding: var(--spacing-md);
+  }
+
+  .game-container iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .game-container iframe {
+    height: 300px;
+  }
+
+  .feature-card,
+  .review-card {
+    padding: var(--spacing-sm);
+  }
+}
